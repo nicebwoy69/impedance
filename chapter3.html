@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 3: Applications of Complex Numbers in Series AC Circuits</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 680px;
+            margin: auto;
+            line-height: 1.6;
+        }
+        h2, h3, h4 {
+            color: #333;
+        }
+        .placeholder {
+            background-color: #f0f0f0;
+            border: 1px dashed #999;
+            padding: 10px;
+            margin: 15px 0;
+            text-align: center;
+            font-style: italic;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Chapter 3: Applications of Complex Numbers in Series AC Circuits</h2>
+
+ <h3>3.1 Impedance in AC Circuits</h3>
+<p>In AC circuits, <strong>impedance</strong> combines <strong>resistance</strong> (R) and <strong>reactance</strong> (X) to represent the total opposition to current flow, encompassing both magnitude and phase. This complex representation is essential for analyzing how AC signals interact with resistors, capacitors, and inductors.</p>
+
+<p><strong>Formula</strong>: For a component with resistance <em>R</em> and reactance <em>X</em>,</p>
+<p><em>Z = R + jX</em></p>
+<p>where <em>Z</em> represents impedance as a complex number, <em>R</em> is the resistive part, and <em>X</em> is the reactive part.</p>
+
+<p><strong>Example</strong>:<br>
+In an R-L circuit with <em>R = 4 Ω</em> and <em>X<sub>L</sub> = 3 Ω</em>,</p>
+<p><em>Z = 4 + j3 Ω</em></p>
+
+<div class="placeholder">Visual Placeholder: Impedance Diagram of Series R-L and R-C Circuits</div>
+
+
+ <h3>3.2 Impedance Calculations in Series Circuits</h3>
+<p>When components are in series, their impedances add directly. This is useful in calculating the total opposition to current flow in circuits with multiple components, like R-L-C circuits.</p>
+
+<p><strong>Series Impedance Formula</strong>: For impedances <em>Z<sub>1</sub> = R<sub>1</sub> + jX<sub>1</sub></em> and <em>Z<sub>2</sub> = R<sub>2</sub> + jX<sub>2</sub></em>,</p>
+<p><em>Z<sub>total</sub> = Z<sub>1</sub> + Z<sub>2</sub> = (R<sub>1</sub> + R<sub>2</sub>) + j(X<sub>1</sub> + X<sub>2</sub>)</em></p>
+
+<p><strong>Example</strong>:<br>
+For an R-L-C circuit with <em>Z<sub>R</sub> = 2 Ω</em>, <em>Z<sub>L</sub> = j5 Ω</em>, and <em>Z<sub>C</sub> = -j3 Ω</em>,</p>
+<p><em>Z<sub>total</sub> = 2 + j(5 - 3) = 2 + j2 Ω</em></p>
+
+<div class="placeholder">Interactive Placeholder: Series Impedance Calculator</div>
+
+
+ <h3>3.3 Calculating Voltage Drops and Phase Angle</h3>
+<p>Using <strong>Ohm’s Law</strong> with complex impedance, we calculate voltage drops across each component in an AC circuit:</p>
+<p><em>V = IZ</em></p>
+
+<p>where:</p>
+<ul>
+    <li><em>V</em> is the voltage across the component,</li>
+    <li><em>I</em> is the current,</li>
+    <li><em>Z</em> is the impedance of the component.</li>
+</ul>
+
+<p>The <strong>phase angle (θ)</strong> between voltage and current reveals how out of sync these two quantities are, which affects power transfer and efficiency in the circuit.</p>
+
+<p><strong>Example</strong>:<br>
+For current <em>I = 2 A</em> in an R-L circuit with <em>Z = 4 + j3 Ω</em>:</p>
+<p>Voltage: <em>V = I ⋅ Z = 2 ⋅ (4 + j3) = 8 + j6 V</em></p>
+
+<p><strong>Phase Angle</strong>: Calculate the phase angle <em>θ</em> between voltage and current using:</p>
+<p><em>θ = tan<sup>-1</sup> (X / R)</em></p>
+
+<div class="placeholder">Interactive Placeholder: Voltage Drop and Phase Angle Calculator</div>
+
+
+ <h3>3.4 Power Calculations in AC Circuits</h3>
+<p>In AC circuits, power calculations involve three types of power:</p>
+<ul>
+    <li><strong>Apparent Power (S)</strong>: Total power in the circuit, combining real and reactive components, measured in VA.</li>
+    <p><em>S = |V| ⋅ |I|</em></p>
+    <li><strong>Real Power (P)</strong>: The actual power consumed or used in the circuit, measured in watts (W).</li>
+    <p><em>P = |V| ⋅ |I| ⋅ cos(θ)</em></p>
+    <li><strong>Reactive Power (Q)</strong>: Power stored and returned by reactive components, like capacitors and inductors, measured in VAR.</li>
+    <p><em>Q = |V| ⋅ |I| ⋅ sin(θ)</em></p>
+</ul>
+
+<p><strong>Example</strong>:<br>
+If <em>|V| = 10 V</em>, <em>|I| = 2 A</em>, and <em>θ = 30°</em>:</p>
+<ul>
+    <li>Apparent Power: <em>S = 20 VA</em></li>
+    <li>Real Power: <em>P = 20 ⋅ cos(30°) = 17.32 W</em></li>
+    <li>Reactive Power: <em>Q = 20 ⋅ sin(30°) = 10 VAR</em></li>
+</ul>
+
+<div class="placeholder">Interactive Placeholder: Power Calculation Tool for Series Circuits</div>
+
+
+ <h3>3.5 Power Factor and Its Importance</h3>
+<p>The <strong>power factor (PF)</strong> describes the ratio of real power to apparent power in an AC circuit, indicating the efficiency of power usage. A higher power factor implies less energy wasted in reactive components, which is especially valuable in audio circuits for clear, efficient sound amplification.</p>
+
+<p><strong>Formula</strong>:</p>
+<p><em>Power Factor = cos(θ)</em></p>
+
+<div class="placeholder">Interactive Placeholder: Power Factor Calculator</div>
+
+
+ <h3>3.6 Resonance in Series RLC Circuits</h3>
+<p>In an RLC circuit, <strong>resonance</strong> occurs when the inductive reactance (<em>X<sub>L</sub></em>) and capacitive reactance (<em>X<sub>C</sub></em>) cancel each other, minimizing total impedance and maximizing current flow. Resonance is essential in audio circuits for tuning to specific frequencies, as seen in speakers and filters.</p>
+
+<p><strong>Resonant Frequency (f)</strong>:</p>
+<p><em>f = 1 / (2π√(LC))</em></p>
+
+<p><strong>Example</strong>: For <em>L = 1 H</em> and <em>C = 1 μF</em>,</p>
+<p><em>f ≈ 159.15 Hz</em></p>
+
+<div class="placeholder">Interactive Placeholder: Resonance Frequency Calculator</div>
+
+
+<h3>3.7 Using Phasor Diagrams for Voltage Drops and Phase</h3>
+<p>Phasor diagrams visually represent the relationship between voltage and current in an AC circuit, showing the phase difference as a rotation between phasors.</p>
+
+<p><strong>Example</strong>: In an R-L circuit, with <em>V<sub>R</sub></em> and <em>V<sub>L</sub></em>, phasors illustrate the combined voltage as the vector sum of these components.</p>
+
+<div class="placeholder">Visual Placeholder: Animated Phasor Diagram to Show Voltage and Current Phase Relationships</div>
+ 
+ <h3>3.8 Applications in Audio Circuits</h3>
+<p>Impedance, phase angle, and resonance are critical in audio circuits, like <strong>speaker crossovers</strong> and <strong>equalizers</strong>. Understanding how these elements work together helps in designing circuits that distribute frequencies effectively.</p>
+
+<p><strong>Example</strong>: In a speaker crossover, components are chosen to achieve specific impedance and phase relationships, helping divide frequencies to deliver the right sounds to different drivers.</p>
+
+<div class="placeholder">Interactive Placeholder: Audio Circuit Example – Crossover Network Analysis Tool</div>
+
+
+<h3>3.9 Summary Table: Impedance, Voltage, Power, and Resonance in Series Circuits</h3>
+
+<table>
+    <thead>
+        <tr>
+            <th>Parameter</th>
+            <th>Formula</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Series Impedance</td>
+            <td><em>Z<sub>total</sub> = (R<sub>1</sub> + R<sub>2</sub>) + j(X<sub>1</sub> + X<sub>2</sub>)</em></td>
+        </tr>
+        <tr>
+            <td>Voltage Drop (Ohm’s Law)</td>
+            <td><em>V = IZ</em></td>
+        </tr>
+        <tr>
+            <td>Phase Angle</td>
+            <td><em>θ = tan<sup>-1</sup> (X / R)</em></td>
+        </tr>
+        <tr>
+            <td>Apparent Power (S)</td>
+            <td><em>S = |V| ⋅ |I|</em></td>
+        </tr>
+        <tr>
+            <td>Real Power (P)</td>
+            <td><em>P = |V| ⋅ |I| ⋅ cos(θ)</em></td>
+        </tr>
+        <tr>
+            <td>Reactive Power (Q)</td>
+            <td><em>Q = |V| ⋅ |I| ⋅ sin(θ)</em></td>
+        </tr>
+        <tr>
+            <td>Power Factor</td>
+            <td><em>PF = cos(θ)</em></td>
+        </tr>
+        <tr>
+            <td>Resonant Frequency</td>
+            <td><em>f = 1 / (2π√(LC))</em></td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

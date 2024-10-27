@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 2: Operations with Complex Numbers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 680px;
+            margin: auto;
+            line-height: 1.6;
+        }
+        h2, h3 {
+            color: #333;
+        }
+        .placeholder {
+            background-color: #f0f0f0;
+            border: 1px dashed #999;
+            padding: 10px;
+            margin: 15px 0;
+            text-align: center;
+            font-style: italic;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Chapter 2: Operations with Complex Numbers</h2>
+
+ <h3>2.1 Basic Operations with Complex Numbers</h3>
+<p>Complex number operations are fundamental in AC circuit analysis, especially for calculating <strong>impedance</strong>, <strong>voltage drops</strong>, and <strong>power</strong>. We handle real and imaginary parts separately when performing operations on complex numbers in rectangular form.</p>
+
+<h4>Addition and Subtraction</h4>
+<p><strong>Addition</strong>: For <em>z<sub>1</sub> = a + jb</em> and <em>z<sub>2</sub> = c + jd</em>,</p>
+<p><em>z<sub>1</sub> + z<sub>2</sub> = (a + c) + j(b + d)</em></p>
+
+<p><strong>Subtraction</strong>:</p>
+<p><em>z<sub>1</sub> - z<sub>2</sub> = (a - c) + j(b - d)</em></p>
+
+<p><strong>Example</strong>:<br>
+If <em>z<sub>1</sub> = 3 + 4j</em> and <em>z<sub>2</sub> = 2 + j</em>:</p>
+<ul>
+    <li><strong>Sum</strong>: <em>z<sub>1</sub> + z<sub>2</sub> = 5 + 5j</em></li>
+    <li><strong>Difference</strong>: <em>z<sub>1</sub> - z<sub>2</sub> = 1 + 3j</em></li>
+</ul>
+
+<div class="placeholder">
+    Interactive Placeholder: Practice Adding and Subtracting Complex Numbers
+</div>
+
+
+ <h4>Multiplication in Rectangular Form</h4>
+<p>When multiplying complex numbers, apply the distributive property, keeping <em>j<sup>2</sup> = -1</em> in mind.</p>
+<p><strong>Formula</strong>: For <em>z<sub>1</sub> = a + jb</em> and <em>z<sub>2</sub> = c + jd</em>,</p>
+<p><em>z<sub>1</sub> ⋅ z<sub>2</sub> = (a ⋅ c - b ⋅ d) + j(a ⋅ d + b ⋅ c)</em></p>
+
+<p><strong>Example</strong>:<br>
+For <em>z<sub>1</sub> = 3 + 2j</em> and <em>z<sub>2</sub> = 1 + j</em>, the product is:</p>
+<p><em>z<sub>1</sub> ⋅ z<sub>2</sub> = 1 + 5j</em></p>
+
+<div class="placeholder">
+    Interactive Placeholder: Step-by-Step Multiplication Exercise
+</div>
+
+
+ <h3>2.2 Division with Complex Conjugates</h3>
+<p>Division of complex numbers is simplified by using the <strong>complex conjugate</strong> of the denominator. For <em>z<sub>1</sub> = a + jb</em> and <em>z<sub>2</sub> = c + jd</em>:</p>
+
+<ol>
+    <li>Multiply the numerator and denominator by the conjugate <em>z<sub>2</sub><sup>*</sup> = c - jd</em>:</li>
+    <p><em>z<sub>1</sub> / z<sub>2</sub> = ((a + jb)(c - jd)) / ((c + jd)(c - jd))</em></p>
+    <li>Simplify, using <em>j<sup>2</sup> = -1</em>:</li>
+    <p><em>z<sub>1</sub> / z<sub>2</sub> = ((ac + bd) + j(bc - ad)) / (c<sup>2</sup> + d<sup>2</sup>)</em></p>
+</ol>
+
+<p><strong>Example</strong>:<br>
+For <em>z<sub>1</sub> = 3 + 2j</em> and <em>z<sub>2</sub> = 1 + j</em>, multiply by <em>1 - j</em>, yielding <em>1.5 - 0.5j</em>.</p>
+
+<div class="placeholder">Interactive Placeholder: Division Exercise with Complex Conjugates</div>
+
+<h3>2.3 Operations in Polar Form</h3>
+<p>Polar form simplifies multiplication and division by handling the <strong>magnitude</strong> and <strong>phase angle</strong> directly.</p>
+
+<ul>
+    <li><strong>Multiplication</strong>: Multiply magnitudes and add angles.</li>
+    <p><em>z<sub>1</sub> ⋅ z<sub>2</sub> = (A<sub>1</sub> ⋅ A<sub>2</sub>) ∠ (θ<sub>1</sub> + θ<sub>2</sub>)</em></p>
+    <li><strong>Division</strong>: Divide magnitudes and subtract angles.</li>
+    <p><em>z<sub>1</sub> / z<sub>2</sub> = (A<sub>1</sub> / A<sub>2</sub>) ∠ (θ<sub>1</sub> - θ<sub>2</sub>)</em></p>
+</ul>
+
+<p><strong>Example</strong>:<br>
+If <em>z<sub>1</sub> = 4 ∠ 30°</em> and <em>z<sub>2</sub> = 2 ∠ 15°</em>:</p>
+<ul>
+    <li><strong>Product</strong>: <em>z<sub>1</sub> ⋅ z<sub>2</sub> = 8 ∠ 45°</em></li>
+    <li><strong>Quotient</strong>: <em>z<sub>1</sub> / z<sub>2</sub> = 2 ∠ 15°</em></li>
+</ul>
+
+<div class="placeholder">Interactive Placeholder: Polar Form Operations Practice</div>
+
+
+
+ <h3>2.4 Magnitude and Phase of Complex Numbers</h3>
+<p>The <strong>magnitude</strong> and <strong>phase angle</strong> describe the size and orientation of a complex number in AC circuits.</p>
+
+<ul>
+    <li><strong>Magnitude</strong>: For <em>z = a + jb</em>,</li>
+    <p><em>|z| = √(a<sup>2</sup> + b<sup>2</sup>)</em></p>
+    <li><strong>Phase Angle (θ)</strong>:</li>
+    <p><em>θ = tan<sup>-1</sup> (b / a)</em></p>
+</ul>
+
+<p><strong>Example</strong>:<br>
+For <em>z = 3 + 4j</em>:</p>
+<ul>
+    <li>Magnitude: <em>|z| = 5</em></li>
+    <li>Phase Angle: <em>θ = 53.13°</em></li>
+</ul>
+
+<div class="placeholder">Interactive Placeholder: Magnitude and Phase Calculation Tool</div>
+
+
+ <h3>2.5 Summary Table: Complex Number Operations</h3>
+
+<table>
+    <thead>
+        <tr>
+            <th>Operation</th>
+            <th>Formula</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Addition</td>
+            <td><em>z<sub>1</sub> + z<sub>2</sub> = (a + c) + j(b + d)</em></td>
+        </tr>
+        <tr>
+            <td>Subtraction</td>
+            <td><em>z<sub>1</sub> - z<sub>2</sub> = (a - c) + j(b - d)</em></td>
+        </tr>
+        <tr>
+            <td>Multiplication (Rectangular)</td>
+            <td><em>z<sub>1</sub> ⋅ z<sub>2</sub> = (a ⋅ c - b ⋅ d) + j(a ⋅ d + b ⋅ c)</em></td>
+        </tr>
+        <tr>
+            <td>Division (Rectangular)</td>
+            <td><em>z<sub>1</sub> / z<sub>2</sub> = ((ac + bd) + j(bc - ad)) / (c<sup>2</sup> + d<sup>2</sup>)</em></td>
+        </tr>
+        <tr>
+            <td>Magnitude</td>
+            <td><em>|z| = √(a<sup>2</sup> + b<sup>2</sup>)</em></td>
+        </tr>
+        <tr>
+            <td>Phase Angle</td>
+            <td><em>θ = tan<sup>-1</sup> (b / a)</em></td>
+        </tr>
+        <tr>
+            <td>Polar Form Multiplication</td>
+            <td><em>(A<sub>1</sub> ⋅ A<sub>2</sub>) ∠ (θ<sub>1</sub> + θ<sub>2</sub>)</em></td>
+        </tr>
+        <tr>
+            <td>Polar Form Division</td>
+            <td><em>(A<sub>1</sub> / A<sub>2</sub>) ∠ (θ<sub>1</sub> - θ<sub>2</sub>)</em></td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>2.6 Visual Aid: Phasor Diagrams</h3>
+<p><strong>Phasor diagrams</strong> provide visual representations of complex operations, particularly for multiplication and division, by showing rotation and scaling.</p>
+
+<p><strong>Example</strong>: Multiplying two phasors helps visualize changes in magnitude and phase.</p>
+
+<div class="placeholder">Interactive Placeholder: Animated Phasor Diagram for Multiplication and Division</div>
+
+
+<h3>2.7 Summary Table: Complex Number Operations</h3>
+
+<table>
+    <thead>
+        <tr>
+            <th>Operation</th>
+            <th>Formula</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Addition</td>
+            <td><em>z<sub>1</sub> + z<sub>2</sub> = (a + c) + j(b + d)</em></td>
+        </tr>
+        <tr>
+            <td>Subtraction</td>
+            <td><em>z<sub>1</sub> - z<sub>2</sub> = (a - c) + j(b - d)</em></td>
+        </tr>
+        <tr>
+            <td>Multiplication (Rectangular)</td>
+            <td><em>z<sub>1</sub> ⋅ z<sub>2</sub> = (a ⋅ c - b ⋅ d) + j(a ⋅ d + b ⋅ c)</em></td>
+        </tr>
+        <tr>
+            <td>Division (Rectangular)</td>
+            <td><em>z<sub>1</sub> / z<sub>2</sub> = ((ac + bd) + j(bc - ad)) / (c<sup>2</sup> + d<sup>2</sup>)</em></td>
+        </tr>
+        <tr>
+            <td>Magnitude</td>
+            <td><em>|z| = √(a<sup>2</sup> + b<sup>2</sup>)</em></td>
+        </tr>
+        <tr>
+            <td>Phase Angle</td>
+            <td><em>θ = tan<sup>-1</sup> (b / a)</em></td>
+        </tr>
+        <tr>
+            <td>Polar Form Multiplication</td>
+            <td><em>(A<sub>1</sub> ⋅ A<sub>2</sub>) ∠ (θ<sub>1</sub> + θ<sub>2</sub>)</em></td>
+        </tr>
+        <tr>
+            <td>Polar Form Division</td>
+            <td><em>(A<sub>1</sub> / A<sub>2</sub>) ∠ (θ<sub>1</sub> - θ<sub>2</sub>)</em></td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

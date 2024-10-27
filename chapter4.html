@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 4: Kirchhoff’s Voltage Law (KVL) in Series Circuits</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 680px;
+            margin: auto;
+            line-height: 1.6;
+        }
+        h2, h3, h4 {
+            color: #333;
+        }
+        .placeholder {
+            background-color: #f0f0f0;
+            border: 1px dashed #999;
+            padding: 10px;
+            margin: 15px 0;
+            text-align: center;
+            font-style: italic;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Chapter 4: Kirchhoff’s Voltage Law (KVL) in Series Circuits</h2>
+
+ <h3>4.1 What is Kirchhoff’s Voltage Law (KVL)?</h3>
+<p>Kirchhoff’s Voltage Law (KVL) states that the <strong>sum of all voltage drops around a closed loop</strong> equals the <strong>total applied voltage</strong>. KVL is essential for analyzing voltage distribution across each component, ensuring circuits function as expected, especially in complex systems where voltage must be balanced.</p>
+
+<p><strong>KVL Formula</strong>:</p>
+<p><em>V<sub>total</sub> = V<sub>1</sub> + V<sub>2</sub> + … + V<sub>n</sub></em></p>
+
+<p><strong>Example</strong>:<br>
+If a circuit has a voltage source of <em>V<sub>total</sub> = 12 V</em> with components that drop voltages <em>V<sub>1</sub> = 4 V</em>, <em>V<sub>2</sub> = 5 V</em>, then:</p>
+<p><em>V<sub>total</sub> = V<sub>1</sub> + V<sub>2</sub> + V<sub>3</sub> = 12 V</em></p>
+
+<div class="placeholder">Interactive Placeholder: KVL Calculator for Series Circuits</div>
+
+
+ <h3>4.2 Applying KVL with Complex Impedance in AC Circuits</h3>
+<p>In AC circuits, KVL calculations use complex numbers to handle the <strong>magnitude</strong> and <strong>phase</strong> of impedance. This means that summing voltage drops involves both the real and imaginary components, allowing us to analyze not only how much voltage is dropped but also the phase shift in the circuit.</p>
+
+<p><strong>Example</strong>:<br>
+Given a circuit with <em>Z<sub>1</sub> = 3 + j4 Ω</em> and <em>Z<sub>2</sub> = 5 + j2 Ω</em>, and a current of <em>I = 1 A</em>:</p>
+<ul>
+    <li>Voltage drop across <em>Z<sub>1</sub></em>: <em>V<sub>1</sub> = I ⋅ Z<sub>1</sub> = 3 + j4</em></li>
+    <li>Voltage drop across <em>Z<sub>2</sub></em>: <em>V<sub>2</sub> = I ⋅ Z<sub>2</sub> = 5 + j2</em></li>
+    <li>Total Voltage: <em>V<sub>total</sub> = V<sub>1</sub> + V<sub>2</sub> = 8 + j6</em></li>
+</ul>
+
+<div class="placeholder">Visual Placeholder: Phasor Diagram Showing Voltage Drops for KVL</div>
+
+
+ <h3>4.3 Non-Ideal Voltage Sources and Internal Resistance</h3>
+<p>Real-world voltage sources often have <strong>internal resistance</strong>, impacting the voltage distribution across a circuit. Internal resistance is typically modeled in series with the source, and it influences both the total voltage drop and the current flow in the circuit, which can be crucial for ensuring accurate voltage delivery to load components.</p>
+
+<p><strong>Example</strong>:<br>
+For a voltage source <em>V<sub>s</sub> = 12 V</em> with internal resistance <em>R<sub>s</sub> = 1 Ω</em> and load <em>R<sub>L</sub> = 4 Ω</em>:</p>
+<p>Effective voltage across <em>R<sub>L</sub></em>: <em>V<sub>R<sub>L</sub></sub> = (V<sub>s</sub> / (R<sub>s</sub> + R<sub>L</sub>)) ⋅ R<sub>L</sub></em></p>
+
+<div class="placeholder">Interactive Placeholder: Non-Ideal Voltage Source Calculator</div>
+
+
+ <h3>4.4 Step-by-Step KVL Analysis in Series AC Circuits</h3>
+<p>Using KVL in AC circuits requires the following steps:</p>
+<ol>
+    <li><strong>Identify Components</strong>: List all components in the loop and their impedance values.</li>
+    <li><strong>Calculate Individual Voltage Drops</strong>: Use <em>V = IZ</em> for each component, applying the current and each component's impedance.</li>
+    <li><strong>Sum Voltage Drops</strong>: Add up the real and imaginary parts of each voltage drop to get the total voltage.</li>
+    <li><strong>Compare with Source Voltage</strong>: Ensure the sum matches the source voltage to verify KVL is satisfied.</li>
+</ol>
+
+<p><strong>Example</strong>:<br>
+In a circuit with <em>Z<sub>R</sub> = 4 Ω</em> and <em>Z<sub>L</sub> = j3 Ω</em>, with a source voltage of <em>V<sub>total</sub> = 8 + j3 V</em>:</p>
+<ul>
+    <li>Current <em>I = 1 A</em></li>
+    <li>Voltage across <em>Z<sub>R</sub></em>: <em>V<sub>R</sub> = 4 V</em></li>
+    <li>Voltage across <em>Z<sub>L</sub></em>: <em>V<sub>L</sub> = j3 V</em></li>
+    <li>Sum <em>V<sub>total</sub> = V<sub>R</sub> + V<sub>L</sub> = 8 + j3</em></li>
+</ul>
+
+<div class="placeholder">Interactive Placeholder: Step-by-Step KVL Practice Tool</div>
+
+
+ <h3>4.5 Analyzing Bridge Circuits with KVL</h3>
+<p>A <strong>bridge circuit</strong> provides a more complex application of KVL. By applying KVL to each loop in a bridge circuit, we can solve for unknown voltages or currents in various branches, which is useful in balancing voltages or analyzing sensor circuits in audio applications.</p>
+
+<p><strong>Example</strong>:<br>
+In a balanced bridge circuit with resistors in each arm, KVL helps verify the balance by equating voltage drops around each loop.</p>
+
+<div class="placeholder">Interactive Placeholder: Bridge Circuit KVL Calculator</div>
+
+
+ <h3>4.6 Phasor Diagrams and Voltage Summation</h3>
+<p>Phasor diagrams visually represent KVL in AC circuits by showing each voltage drop as a vector (phasor). This approach illustrates the summation of voltages as the vector sum of all voltage phasors in a loop, making it easier to understand complex AC relationships.</p>
+
+<p><strong>Example</strong>: In an R-L circuit with <em>V<sub>R</sub> = 4 V</em> and <em>V<sub>L</sub> = j3 V</em>, a phasor diagram displays the total voltage as the vector sum of <em>V<sub>R</sub></em> and <em>V<sub>L</sub></em>.</p>
+
+<div class="placeholder">Visual Placeholder: Animated Phasor Diagram for Complex KVL</div>
+
+
+ <h3>4.7 Applications of KVL in Audio Circuits</h3>
+<p>KVL is crucial in audio circuit design, especially for analyzing the <strong>frequency response of filters</strong> and <strong>amplifiers</strong>. Voltage drops across components like resistors, capacitors, and inductors directly impact how frequencies are filtered or amplified, influencing the overall sound quality.</p>
+
+<p><strong>Example</strong>: In an audio filter circuit, KVL helps calculate voltage drops across resistors and capacitors, shaping the output frequency response and ensuring desired sound characteristics.</p>
+
+<div class="placeholder">Interactive Placeholder: Audio Circuit Example – KVL Application in Filter Design</div>
+
+
+<h3>4.8 Summary Table: KVL in AC Circuits</h3>
+
+<table>
+    <thead>
+        <tr>
+            <th>Parameter</th>
+            <th>Formula</th>
+        </tr>
+    </thead>
+    <tbody>
+                 <tr>
+            <td>KVL Total Voltage</td>
+            <td><em>V<sub>total</sub> = V<sub>1</sub> + V<sub>2</sub> + … + V<sub>n</sub></em></td>
+        </tr>
+        <tr>
+            <td>Voltage Drop</td>
+            <td><em>V = IZ</em></td>
+        </tr>
+        <tr>
+            <td>Internal Resistance Voltage</td>
+            <td><em>V<sub>load</sub> = \frac{V_s}{R_s + R_L} \cdot R_L</em></td>
+        </tr>
+        <tr>
+            <td>Phasor Sum</td>
+            <td><em>V<sub>total</sub> = V<sub>R</sub> + V<sub>L</sub> + …</em> (vector sum)</td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

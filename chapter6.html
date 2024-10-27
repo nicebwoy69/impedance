@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 6: Analysis of Parallel AC Circuits</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 680px;
+            margin: auto;
+            line-height: 1.6;
+        }
+        h2, h3, h4 {
+            color: #333;
+        }
+        .placeholder {
+            background-color: #f0f0f0;
+            border: 1px dashed #999;
+            padding: 10px;
+            margin: 15px 0;
+            text-align: center;
+            font-style: italic;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Chapter 6: Analysis of Parallel AC Circuits</h2>
+
+ <h3>6.1 Introduction to Parallel AC Circuits</h3>
+<p>In parallel circuits, components share the same voltage but carry separate currents based on their individual impedances. This configuration is essential for AC circuit design, where controlling impedance and current flow is critical for applications like audio systems and power distribution.</p>
+
+<div class="placeholder">Interactive Placeholder: Basic Parallel Circuit Calculator</div>
+<h3>6.2 Calculating Total Impedance in Parallel AC Circuits</h3>
+<p>In parallel AC circuits, <strong>total impedance</strong> affects how much current flows through the circuit and is critical for maintaining stability in devices like audio amplifiers. It is calculated as the reciprocal of the sum of reciprocals of each branch’s impedance.</p>
+
+<p><strong>Formula</strong>:</p>
+<p><em>1 / Z<sub>total</sub> = 1 / Z<sub>1</sub> + 1 / Z<sub>2</sub> + … + 1 / Z<sub>n</sub></em></p>
+
+<div class="placeholder">Interactive Placeholder: Parallel Impedance Calculator</div>
+<h3>6.3 Current Division in Parallel Circuits</h3>
+<p>In parallel circuits, current divides across branches according to each branch’s impedance. Higher impedance branches receive less current, while lower impedance branches receive more, which is essential for balancing current and preventing overloads in individual components.</p>
+
+<p><strong>Current Division Formula</strong>:<br>
+For two branches with <em>Z<sub>1</sub></em> and <em>Z<sub>2</sub></em>, and total current <em>I</em>:</p>
+<p><em>I<sub>1</sub> = I ⋅ (Z<sub>2</sub> / (Z<sub>1</sub> + Z<sub>2</sub>))</em></p>
+
+<div class="placeholder">Interactive Placeholder: Current Division Calculator</div>
+
+<h3>6.4 Parallel Resonance in AC Circuits</h3>
+<p><strong>Parallel resonance</strong> occurs when inductive and capacitive reactances in a parallel LC circuit cancel each other at a specific frequency, leading to high impedance and minimal current flow. This phenomenon is critical in audio applications for frequency tuning, where resonance can enhance or filter certain frequencies.</p>
+
+<p><strong>Resonant Frequency Formula</strong>:</p>
+<p><em>f = 1 / (2π √(LC))</em></p>
+
+<div class="placeholder">Interactive Placeholder: Parallel Resonance Calculator</div>
+
+<h3>6.5 Power Calculations and Power Factor in Parallel Circuits</h3>
+<p>Power dissipation in parallel circuits includes <strong>real power</strong> (P) and <strong>reactive power</strong> (Q). The <strong>power factor</strong> measures the phase difference between voltage and current, describing how efficiently the circuit uses power. In AC systems, a higher power factor indicates less reactive power and greater efficiency.</p>
+
+<ul>
+    <li><strong>Real Power (P)</strong>: <em>P = I<sup>2</sup> ⋅ R</em></li>
+    <li><strong>Reactive Power (Q)</strong>: <em>Q = I<sup>2</sup> ⋅ X</em></li>
+    <li><strong>Apparent Power (S)</strong>: <em>S = √(P<sup>2</sup> + Q<sup>2</sup>)</em></li>
+</ul>
+
+<p><strong>Power Factor Correction</strong>:<br>
+In circuits with <em>inductive loads</em>, a <strong>capacitor</strong> connected in parallel improves the power factor by reducing phase lag, making the circuit more efficient.</p>
+
+<div class="placeholder">Interactive Placeholder: Power Factor Correction Tool for Parallel Circuits</div>
+
+<h3>6.6 Applications of Parallel AC Circuits in Audio Systems</h3>
+<p>Parallel circuits are widely used in audio systems for tasks like frequency separation and signal shaping. <strong>Crossover networks</strong> and <strong>equalizers</strong> utilize parallel components to deliver high-quality audio output.</p>
+
+<ul>
+    <li><strong>Crossover Networks</strong>: Crossover circuits separate audio signals into frequency bands, directing different ranges to specific drivers (e.g., woofers, tweeters), enhancing audio clarity.</li>
+    <li><strong>Equalizers</strong>: Equalizers use parallel filters to adjust particular frequencies, enabling sound shaping by boosting or cutting various bands for a customized audio output.</li>
+</ul>
+
+<div class="placeholder">Interactive Placeholder: Audio Circuit Example – Crossover Network and Equalizer Calculator</div>
+
+<h3>6.7 Visualizing Parallel Circuits with Phasor Diagrams</h3>
+<p>Phasor diagrams visually represent how current and voltage vary in each branch of a parallel circuit. In resonance, phasors show how inductive and capacitive currents cancel, resulting in minimal total current flow at that frequency.</p>
+
+<div class="placeholder">Visual Placeholder: Animated Phasor Diagram for Parallel Resonance</div>
+
+<h3>6.8 Millman’s Theorem for Parallel Circuits</h3>
+<p><strong>Millman’s Theorem</strong> allows us to simplify calculations in parallel circuits by finding an equivalent voltage for multiple branches. This is especially useful for circuits with complex branch configurations, enabling quicker analysis of current and voltage.</p>
+
+<p><strong>Formula</strong>:</p>
+<p><em>V<sub>eq</sub> = (∑ (I<sub>n</sub> / Z<sub>n</sub>)) / ∑ (1 / Z<sub>n</sub>)</em></p>
+
+<div class="placeholder">Interactive Placeholder: Millman’s Theorem Calculator for Parallel Circuits</div>
+
+
+<h3>6.9 Summary Table: Key Formulas for Parallel AC Circuits</h3>
+
+<table>
+    <thead>
+        <tr>
+            <th>Parameter</th>
+            <th>Formula</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Total Impedance</td>
+            <td><em>1 / Z<sub>total</sub> = 1 / Z<sub>1</sub> + 1 / Z<sub>2</sub> + …</em></td>
+        </tr>
+        <tr>
+            <td>Current Division (Two Branch)</td>
+            <td><em>I<sub>1</sub> = I ⋅ (Z<sub>2</sub> / (Z<sub>1</sub> + Z<sub>2</sub>))</em></td>
+        </tr>
+        <tr>
+            <td>Resonant Frequency</td>
+            <td><em>f = 1 / (2π √(LC))</em></td>
+        </tr>
+        <tr>
+            <td>Power Factor</td>
+            <td><em>PF = cos(θ)</em></td>
+        </tr>
+        <tr>
+            <td>Millman’s Theorem</td>
+            <td><em>V<sub>eq</sub> = (∑ (I<sub>n</sub> / Z<sub>n</sub>)) / ∑ (1 / Z<sub>n</sub>)</em></td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
